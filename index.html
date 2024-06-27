@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+    <link rel="manifest" href="./favicons/site.webmanifest">
+    <title>Sausage Clicker</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="content">
+            <div>
+                <h1>Sausage Clicker</h1>
+            </div>
+            <div class="innerContent">
+                <fieldset>
+                    <legend>Clicks</legend>
+                    <ul>
+                        <li id="clickCounter"></li>
+                        <li>Sausages</li>
+                    </ul>
+                </fieldset>
+            </div>
+            <div class="innerContent">
+                <button id="clickBtn"><img id="buttonImg" src="./img/sausage.png" alt="Image of sausage"></button>
+            </div>
+            <div class="center innerContent" id="shop">
+                <fieldset>
+                    <legend>Shop</legend>
+                    <table>
+                        <tr>
+                            <th>Name</th>
+                            <th>Item</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>AutoClicker</td>
+                            <td><button id="startAuto" class="button disabled" disabled>Start</button></td>
+                            <td id="autoClickPrice"></td>
+                        </tr>
+                        <tr>
+                            <td>1 click = <span id="clickSpeedLabel">1</span> Clicks</td>
+                            <td><button class="button" id="increaseClickSpeed">Speed</button></td>
+                            <td id="clickSpeedPrice"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

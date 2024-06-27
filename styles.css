@@ -1,0 +1,200 @@
+body {
+    background-color: darkgrey;
+    margin: 8px 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+ul li:nth-child(1) {
+    text-decoration: underline;
+}
+
+ul li:nth-child(2) {
+    font-weight: bold;
+}
+
+fieldset {
+    background-color: gainsboro;
+    display: flex;
+    width: 50%;
+    border-radius: 1vi;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+fieldset legend {
+    font-weight: bold;
+}
+
+fieldset p {
+    width: 6ch;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#clickCounter {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-size: 7ch;
+    font-weight: bold;
+}
+
+#buttonImg {
+    width: 60%;
+}
+
+#clickBtn {
+    display: block;
+    margin: auto;
+    border: none;
+    background: none;
+}
+
+#clickBtn:active {
+    transform: scale(0.8);
+}
+
+#shop table tr td {
+    vertical-align: top;
+}
+
+#shop table tr td:nth-child(1) {
+    width: 16ch;
+}
+
+#shop table tr td:nth-child(-n + 2) {
+    vertical-align: middle;
+}
+
+#shop table tr td button {
+    width: 10ch;
+}
+
+#shop table {
+    border: 1px solid;
+    border-radius: 0.3vi;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#shop table th {
+    border-bottom: 1px solid;
+}
+
+.button {
+    background-color: #04AA6D;
+    padding: 1vh 1vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.center {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    background-color: cornsilk;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+}
+
+.innerContent {
+    margin-bottom: 4vh;
+}
+
+@keyframes click {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.btnClick {
+    animation-name: click;
+    animation-duration: 400ms;
+    animation-fill-mode: forwards;
+}
+
+@media only screen and (max-width: 1023px) {
+    #shop fieldset {
+        width: 100%;
+    }
+
+    #shop {
+        width: 95%;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+    }
+
+    #shop table tr td:nth-child(1) {
+        vertical-align: middle;
+    }
+
+    #shop table tr td {
+        font-size: 1.5ch;
+    }
+
+    #shop table tr td {
+        padding-bottom: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    #buttonImg {
+        width: 30vw;
+    }
+
+    #shop fieldset {
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+    }
+
+    #shop {
+        width: auto;
+    }
+
+    .content {
+        border: 2px solid;
+        border-radius: 1vi;
+        margin: auto;
+        width: 75%;
+    }
+
+}
